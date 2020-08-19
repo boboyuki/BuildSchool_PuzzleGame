@@ -1,0 +1,31 @@
+body {
+  background-color: #888383;
+  color: white;
+}
+
+label[for="blocks"] {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+#blocks {
+  width: 250px;
+}
+
+#puzzles {
+  border: 1px solid #000;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  background-color: #e4d4d4;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+#puzzles .puzzle {
+  border: 1px solid #fff;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+/*# sourceMappingURL=style.css.map */

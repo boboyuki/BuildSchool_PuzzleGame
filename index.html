@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>拼圖遊戲</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./dist/style/style.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</head>
+
+<body>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-12 col-md-6 mb-2">
+        <h1>拼圖遊戲</h1>
+        <form>
+          <div class="form-group">
+            <label for="blocks">調整塊數2x2</label>
+            <input type="range" class="form-control-range" id="blocks" value="2" min="2" max="6">
+          </div>
+        </form>
+        <button type="button" class="start btn btn-primary">開始</button>
+        <button type="button" class="auto btn btn-success">自動解</button>
+        <button type="button" class="reset btn btn-info">重新開始</button>
+      </div>
+      <div class="col-12 col-md-6">
+        <div id="puzzles" class="d-flex 
+          flex-wrap">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  
+  <script src="./main.js"></script>
+</body>
+
+</html>
